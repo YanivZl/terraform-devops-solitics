@@ -9,6 +9,7 @@ This repository contains Terraform scripts to provision an Amazon Elastic Kubern
 3. [Prerequisites](#prerequisites)
 4. [Instructions](#instructions)
     - [Provisioning Steps](#provisioning-steps)
+5. [CloudFront URL](#cloudfront-url)
 
 ## Overview
 
@@ -92,3 +93,7 @@ Before you begin, ensure you have the following installed:
     ```
 
 11. Once provisioning is complete, Terraform will output relevant information such as the URL of the CloudFront distribution.
+
+## CloudFront URL
+
+The CloudFront URL that provisioned and accessible is: `http://d3769gua5fx0le.cloudfront.net/`. The application deployed is similar to [httpbingo.org](https://httpbingo.org/).
