@@ -120,7 +120,7 @@ resource "kubectl_manifest" "ingress" {
 
 resource "null_resource" "alb_hostname" {
   provisioner "local-exec" {
-    command = "kubectl get ingress alb-ingress -o jsonpath='{.status.loadBalancer.ingress[0].hostname}' > ../2-cloudfront/alb_hostname"
+    command = "kubectl get ingress alb-ingress -o jsonpath={.status.loadBalancer.ingress[0].hostname} > ../2-cloudfront/alb_hostname"
   }
 }
 
