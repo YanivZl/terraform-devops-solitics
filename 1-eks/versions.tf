@@ -2,10 +2,10 @@ terraform {
   required_version = ">= 1.3"
 
   backend "s3" {
-    bucket         	   = "yanivzl-solitics-tfstate"
-    key              	   = "state/1-eks.tfstate"
-    region         	   = "eu-west-1"
-    encrypt        	   = true
+    bucket  = "yanivzl-solitics-tfstate"
+    key     = "state/1-eks.tfstate"
+    region  = "eu-west-1"
+    encrypt = true
   }
 
   required_providers {

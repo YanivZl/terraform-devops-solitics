@@ -8,6 +8,10 @@ output "eks_cluster_name" {
   value       = module.eks.cluster_name
 }
 
+output "eks_cluster_vpc_id" {
+  description = "VPC ID of the EKS VPC"
+  value       = module.vpc.vpc_id
+}
 output "eks_cluster_public_subnet_ids" {
   description = "List of public subnets IDs"
   value       = module.vpc.public_subnets
@@ -26,4 +30,9 @@ output "eks_cluster_sg_id" {
 output "eks_iam_role_arn" {
   description = "EKS IAM Role"
   value       = module.eks.cluster_iam_role_arn
+}
+
+output "cloud_front_url" {
+  description = "CloudFront URL"
+  value       = module.cloudfront.cloudfront_distribution_domain_name
 }
