@@ -128,7 +128,7 @@ module "second_ec2_security_group_eks_vpc" {
   ingress_cidr_blocks = ["0.0.0.0/0"]
   ingress_rules       = ["http-80-tcp", "ssh-tcp"]
 
-  egress_rules = ["http-80-tcp"]
+  egress_rules = ["http-80-tcp", "ssh-tcp"]
 
   tags = local.tags
 }
