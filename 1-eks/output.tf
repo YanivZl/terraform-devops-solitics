@@ -34,5 +34,5 @@ output "eks_iam_role_arn" {
 
 output "cloud_front_url" {
   description = "CloudFront URL"
-  value       = module.cloudfront.cloudfront_distribution_domain_name
+  value       = "https://${module.cloudfront.cloudfront_distribution_domain_name}"
 }
