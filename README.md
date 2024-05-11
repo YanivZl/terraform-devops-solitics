@@ -56,7 +56,7 @@ To deploy the infrastructure:
 
 ## Solution Description
 
-### Task 1: Create a CloudFront Distribution
+### Task 1: Provisioning EKS, ALB and CloudFront Distribution
 
 Using Terraform, we provisioned an Amazon Elastic Kubernetes Service (EKS) cluster in the eu-west-1 region. The EKS cluster includes a simple web server application (e.g., httpbin) deployed as a Docker container.
 
