@@ -68,7 +68,7 @@ The CloudFront distribution is configured with logging enabled. Logs generated b
 
 The CloudFront URL that provisioned and accessible is: `http://d3769gua5fx0le.cloudfront.net/`. The application deployed is similar to [httpbingo.org](https://httpbingo.org/).
 
-### Task 1: Establish VPC Connectivity via VPC PrivateLink
+### Task 2: Establish VPC Connectivity via VPC PrivateLink
 
 The `2-privatelink` folder contains Terraform scripts to establish VPC connectivity between two VPCs using VPC private link. It utilizes the VPC created in Task 1 (`eks-vpc`).
 
